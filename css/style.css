@@ -1,11 +1,101 @@
 
+:root{
+    --color1:#2a9d8f;
+    --color1-2:#1f7e73;
+    --color2:#e63946;
+    --color3:#e9c46a;
+    --color4:#e5e5e5;
+    --blanco: #fff;
+}
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*,*:before,*:after{
+*, *:after, *:before{
     box-sizing: inherit;
 }
 
+body{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;;
+}
 
+/* Globales */
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Utilidades */
+
+.boton{
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.boton--agregar{
+    background-color: var(--color1);
+    color: var(--blanco);
+}
+
+.boton--agregar:hover{
+    background-color: var(--color1-2);
+}
+
+.btn-completado{
+    background-color: var(--color3);
+}
+
+.btn-eliminar{
+    background-color: var(--color2);
+    color: var(--blanco);
+}
+
+.btn-modificar{
+    background-color: var(--color1);
+    color: var(--blanco);
+}
+
+.agregar-tarea{
+    background-color: var(--color4);
+    padding: 2rem;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.campo-texto{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.lista-tarea{
+    background-color: ghostwhite;
+    min-height: 100px;
+    padding: 2rem;
+}
+
+.row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.col{
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
